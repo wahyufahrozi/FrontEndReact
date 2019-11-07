@@ -68,7 +68,6 @@ $ npm start
 ## Aplication Structure
 
 - `index.js` - Entry point of our aplication
-- `App.js` - Define all routes here
 - `src/Components` - This folder containt files that define all components
 - `src/Pages` - All pages of this web goes here
 - `src/Helpers` - This folder contain file that help you simplify your code such as define dummy data

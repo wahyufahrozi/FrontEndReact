@@ -9,7 +9,8 @@ const AllCategory = [
   "Drama",
   "Romance",
   "Mystery",
-  "Detective"
+  "Detective",
+  "Novel"
 ];
 
 module.exports = AllCategory;

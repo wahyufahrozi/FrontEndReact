@@ -7,7 +7,8 @@ const books = [
     date: "20 Juni",
     year: "2010",
     description:
-      "Harry Potter adalah seri tujuh novel fantasi yang dikarang oleh penulis Inggris J. K. Rowling"
+      "Harry Potter adalah seri tujuh novel fantasi yang dikarang oleh penulis Inggris J. K. Rowling",
+    genre: "Fantasy"
   },
   {
     title: "The Lion, The Witch, and The Wardrobe",
@@ -17,7 +18,8 @@ const books = [
     date: "10 Maret",
     year: "2014",
     description:
-      " Sang Singa, Sang Penyihir dan Lemari adalah novel fantasi karya C. S. Lewis. Buku ini ditulis pada tahun 1950 dan mempunyai nuansa sekitar tahun 1940. Buku ini adalah yang pertama kali ditulis dari ketujuh seri The Chronicles of Narnia"
+      " Sang Singa, Sang Penyihir dan Lemari adalah novel fantasi karya C. S. Lewis. Buku ini ditulis pada tahun 1950 dan mempunyai nuansa sekitar tahun 1940. Buku ini adalah yang pertama kali ditulis dari ketujuh seri The Chronicles of Narnia",
+    genre: "Fantasy"
   },
   {
     title: "Le Petit Prince (The Little Prince)",
@@ -27,7 +29,8 @@ const books = [
     date: "19 Januari",
     year: "2014",
     description:
-      "Le Petit Prince (Pangeran Kecil) adalah novel karya Antoine de Saint-Exupéry yang diterbitkan pada tahun 1943. Novel dalam Bahasa Prancis ini telah diterjemahkan ke dalam lebih dari 300 bahasa dan dialek, serta terjual lebih dari 140 juta salinan hingga saat ini. Saint-Exupéry sendiri adalah seorang pelopor dunia penerbangan komersial di Eropa, Afrika, dan Amerika Selatan. Sebagai seorang penerbang, ia terlibat sebagai pejuang pembebasan Prancis dalam Perang Dunia II, yang  menjadikannya seorang Pahlawan Prancis"
+      "Le Petit Prince (Pangeran Kecil) adalah novel karya Antoine de Saint-Exupéry yang diterbitkan pada tahun 1943. Novel dalam Bahasa Prancis ini telah diterjemahkan ke dalam lebih dari 300 bahasa dan dialek, serta terjual lebih dari 140 juta salinan hingga saat ini. Saint-Exupéry sendiri adalah seorang pelopor dunia penerbangan komersial di Eropa, Afrika, dan Amerika Selatan. Sebagai seorang penerbang, ia terlibat sebagai pejuang pembebasan Prancis dalam Perang Dunia II, yang  menjadikannya seorang Pahlawan Prancis",
+    genre: "Novel"
   },
   {
     title: "She: A History Of Adventure",
@@ -37,7 +40,8 @@ const books = [
     date: "30 Desember",
     year: "2017",
     description:
-      "Diterjemahkan dari bahasa Inggris-Dia, dengan subtitle A History of Adventure, adalah novel karya penulis Inggris H.Rider Haggard, yang pertama kali diserialkan di majalah The Graphic dari Oktober 1886 hingga Januari 1887. Dia sangat populer saat dirilis dan tidak pernah kehabisan cetakan"
+      "Diterjemahkan dari bahasa Inggris-Dia, dengan subtitle A History of Adventure, adalah novel karya penulis Inggris H.Rider Haggard, yang pertama kali diserialkan di majalah The Graphic dari Oktober 1886 hingga Januari 1887. Dia sangat populer saat dirilis dan tidak pernah kehabisan cetakan",
+    genre: "Adventure"
   },
   {
     title: "The Hobbit",
@@ -47,7 +51,8 @@ const books = [
     date: "22 Desember",
     year: "2008",
     description:
-      " Sang Hobbit adalah sebuah buku novel fantasi yang ditulis oleh J. R. R. Tolkien dengan alur cerita laksana dongeng. Buku ini pertama kali diterbitkan di Inggris pada 21 September 1937."
+      " Sang Hobbit adalah sebuah buku novel fantasi yang ditulis oleh J. R. R. Tolkien dengan alur cerita laksana dongeng. Buku ini pertama kali diterbitkan di Inggris pada 21 September 1937.",
+    genre: "Adventure"
   },
   {
     title: "The lord Of The Ring",
@@ -57,7 +62,8 @@ const books = [
     date: "15 September",
     year: "2016",
     description:
-      " The Lord of the Rings adalah novel kisah fantasi epik karangan J. R. R. Tolkien."
+      " The Lord of the Rings adalah novel kisah fantasi epik karangan J. R. R. Tolkien.",
+    genre: "Adventure"
   },
   {
     title: "Ketika cinta bertasbih",
@@ -67,7 +73,8 @@ const books = [
     date: "16 November",
     year: "2016",
     description:
-      "etika Cinta Bertasbih adalah sebuah novel roman Indonesia yang dikarang oleh Habiburrahman El Shirazy dan diterbitkan pada tahun 2007 oleh Republika-Basmallah."
+      "etika Cinta Bertasbih adalah sebuah novel roman Indonesia yang dikarang oleh Habiburrahman El Shirazy dan diterbitkan pada tahun 2007 oleh Republika-Basmallah.",
+    genre: "Romance"
   },
   {
     title: "A Tale of Two Cities",
@@ -76,7 +83,8 @@ const books = [
     date: "17 November",
     year: "2017",
     description:
-      "A Tale of Two Cities adalah novel karya Charles Dickens yang bersetting di London dan Paris sebelum dan selama Revolusi Prancis. Karya ini terjual sebanyak 200 juta salinan di seluruh dunia."
+      "A Tale of Two Cities adalah novel karya Charles Dickens yang bersetting di London dan Paris sebelum dan selama Revolusi Prancis. Karya ini terjual sebanyak 200 juta salinan di seluruh dunia.",
+    genre: "Social Criticsm"
   },
   {
     title: "Dia Adalah Kakakku",
@@ -85,7 +93,8 @@ const books = [
       "https://cdn.gramedia.com/uploads/items/207999732_Dia-Adalah-Kakakk.jpg",
     date: "18 November",
     year: "2018",
-    description: "Sebuah kisah tentang pengorbanan kakak untuk adik-adiknya."
+    description: "Sebuah kisah tentang pengorbanan kakak untuk adik-adiknya.",
+    genre: "Drama"
   },
   {
     title: "The Da Vinci Code",
@@ -95,7 +104,8 @@ const books = [
     date: "13 Juli",
     year: "2011",
     description:
-      "The Da Vinci Code adalah sebuah novel detektif misteri karya Dan Brown. Novel ini menceritakan simbolog Robert Langdon dan kriptolog Sophie Neveu setelah suatu peristiwa pembunuhan di Museum Louvre"
+      "The Da Vinci Code adalah sebuah novel detektif misteri karya Dan Brown. Novel ini menceritakan simbolog Robert Langdon dan kriptolog Sophie Neveu setelah suatu peristiwa pembunuhan di Museum Louvre",
+    Genre: "Detective"
   }
 ];
 

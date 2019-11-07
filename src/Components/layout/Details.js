@@ -8,7 +8,7 @@ const Details = props => {
         <div className="row">
           <div className="col s12 m9 left">
             <h2 className="right"> Available</h2>
-            <a class=" waves-light btn yellow button">Novel</a>
+            <a class=" waves-light btn yellow button">{props.genre}</a>
             <h1>{props.title} </h1>
             <span>
               {props.date} {props.year}

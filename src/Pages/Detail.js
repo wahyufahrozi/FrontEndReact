@@ -21,16 +21,24 @@ class Detail extends Component {
     });
   }
   render() {
-    const { title, description, image_url, date, year } = this.state.book;
+    const {
+      title,
+      description,
+      image_url,
+      date,
+      year,
+      genre
+    } = this.state.book;
     return (
       <div>
-        <Navbardetail url_image={image_url} />
+        <Navbardetail url_image={image_url} title={title} />
         <Details
           title={title}
           description={description}
           image_url={image_url}
           date={date}
           year={year}
+          genre={genre}
         />
       </div>
     );

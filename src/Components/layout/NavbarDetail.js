@@ -49,7 +49,7 @@ class NavbarDetail extends Component {
         <div className="nav-wrapper">
           <nav className="transparent z-depth-0 nav-detail">
             <div className="na-nav">
-              <a href="http://localhost:3000/" className="left">
+              <a href="/" className="left">
                 <i className="small material-icons">arrow_back</i>
               </a>
               <ul className="right">

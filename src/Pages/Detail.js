@@ -39,6 +39,7 @@ class Detail extends Component {
           date={date}
           year={year}
           genre={genre}
+          index={this.state.id}
         />
       </div>
     );

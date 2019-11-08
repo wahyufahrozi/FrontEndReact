@@ -7,7 +7,7 @@ const books = [
     date: "20 Juni",
     year: "2010",
     description:
-      "Harry Potter adalah seri tujuh novel fantasi yang dikarang oleh penulis Inggris J. K. Rowling",
+      "Harry Potter adalah seri tujuh novel fantasi yang dikarang oleh penulis Inggris J. K. Rowling. Novel ini mengisahkan tentang petualangan seorang penyihir remaja bernama Harry Potter dan sahabatnya, Ronald Bilius Weasley dan Hermione Jane Granger, yang merupakan pelajar di Sekolah Sihir Hogwarts. Inti cerita dalam novel-novel ini berpusat pada upaya Harry untuk mengalahkan penyihir hitam jahat bernama Lord Voldemort, yang berambisi untuk menjadi makhluk abadi, menaklukkan dunia sihir, menguasai orang-orang nonpenyihir, dan membinasakan siapapun yang menghalangi jalannya, terutama Harry Potter.Sejak dirilisnya novel pertama, Harry Potter and the Philosopher's Stone (di Indonesia diterbitkan dengan judul Harry Potter dan Batu Bertuah) pada tanggal 30 Juni 1997, seri ini telah mendapatkan popularitas besar, berbagai pujian kritis, dan kesuksesan komersial di seluruh dunia.[1] Beberapa kritikus juga melontarkan kritikan negatif, terutama karena temanya yang gelap. Hingga Juli 2013, seri ini telah terjual sekitar 450 juta kopi di seluruh dunia, menjadikannya sebagai novel seri paling laris sepanjang masa, dan telah diterjemahkan ke dalam 73 bahasa.Empat novel terakhir secara berturut-turut mencetak rekor sebagai buku dengan penjualan tercepat dalam sejarah. ",
     genre: "Fantasy"
   },
   {
@@ -18,7 +18,7 @@ const books = [
     date: "10 Maret",
     year: "2014",
     description:
-      " Sang Singa, Sang Penyihir dan Lemari adalah novel fantasi karya C. S. Lewis. Buku ini ditulis pada tahun 1950 dan mempunyai nuansa sekitar tahun 1940. Buku ini adalah yang pertama kali ditulis dari ketujuh seri The Chronicles of Narnia",
+      "Sang Singa, Sang Penyihir dan Lemari (bahasa Inggris: The Lion, the Witch and the Wardrobe) adalah novel fantasi karya C. S. Lewis. Buku ini ditulis pada tahun 1950 dan mempunyai nuansa sekitar tahun 1940. Buku ini adalah yang pertama kali ditulis dari ketujuh seri The Chronicles of Narnia. Meskipun buku ini adalah yang pertama kali ditulis, tetapi secara kronologi buku ini adalah buku yang kedua setelah Keponakan Penyihir",
     genre: "Fantasy"
   },
   {

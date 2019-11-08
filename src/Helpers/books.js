@@ -51,7 +51,7 @@ const books = [
     date: "22 Desember",
     year: "2008",
     description:
-      " Sang Hobbit adalah sebuah buku novel fantasi yang ditulis oleh J. R. R. Tolkien dengan alur cerita laksana dongeng. Buku ini pertama kali diterbitkan di Inggris pada 21 September 1937.",
+      " Sang Hobbit (Bahasa Inggris:The Hobbit) adalah sebuah buku novel fantasi yang ditulis oleh J. R. R. Tolkien dengan alur cerita laksana dongeng. Buku ini pertama kali diterbitkan di Inggris pada 21 September 1937. Walaupun buku ini merupakan karya yang mandiri, seringkali Sang Hobbit dilihat sebagai novel fantasi pendahulu dari karya Tolkien selanjutnya: Penguasa seluruh Cincin (The Lord of the Rings), sebuah buku novel fantasi yang banyak diperbincangkan dan ketiga serinya (trilogi) dipublikasikan pada tahun 1954 hingga 1955.Novel ini lalu di terjemahkan dan diterbitkan dalam Bahasa Indonesia pada tahun 2002 oleh penerbit gramedia menyusul sambutan yang baik atas penayangan film dan penjualan buku trilogi The Lord of the Rings. ",
     genre: "Adventure"
   },
   {

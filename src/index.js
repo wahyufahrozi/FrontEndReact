@@ -6,11 +6,16 @@ import Detail from "../src/Pages/Detail";
 import * as serviceWorker from "./serviceWorker";
 import "materialize-css/dist/css/materialize.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import books from "./Helpers/books";
 
-const EnhancedApp = () => {
+const EnhancedApp = props => {
   return (
     <Router>
-      <Route exact path="/" component={Home} />
+      <Route
+        exact
+        path="/"
+        render={props => <Home {...props} book={books} />}
+      />
       <Route path="/detail/:index" component={Detail} />
     </Router>
   );

@@ -105,7 +105,7 @@ const books = [
     year: "2011",
     description:
       "The Da Vinci Code adalah sebuah novel detektif misteri karya Dan Brown. Novel ini menceritakan simbolog Robert Langdon dan kriptolog Sophie Neveu setelah suatu peristiwa pembunuhan di Museum Louvre",
-    Genre: "Detective"
+    genre: "Detective"
   }
 ];
 

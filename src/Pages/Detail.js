@@ -31,7 +31,11 @@ class Detail extends Component {
     } = this.state.book;
     return (
       <div>
-        <Navbardetail url_image={image_url} title={title} />
+        <Navbardetail
+          image_url={image_url}
+          title={title}
+          alert={this.props.match.params.index}
+        />
         <Details
           title={title}
           description={description}

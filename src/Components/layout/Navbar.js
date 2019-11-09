@@ -5,10 +5,19 @@ import "./Navbar.css";
 import AllCategory from "../../Helpers/AllCategory";
 import AllTime from "../../Helpers/AllTime";
 class Navbar extends Component {
-  componentDidMount() {
-    M.AutoInit();
-  }
   render() {
+    const {
+      title,
+      author,
+      image_url,
+      date,
+      year,
+      description,
+      genre,
+      onChange,
+      onSubmit,
+      modalId
+    } = this.props;
     return (
       <div>
         <nav>
@@ -127,59 +136,131 @@ class Navbar extends Component {
               </a>
             </li>
             <li>
-              <a className=" modal-trigger" href="#modal1">
+              <a className=" modal-trigger" href="#" data-target={modalId}>
                 Add Book
                 <i class="material-icons left ">add_circle_outline</i>
               </a>
             </li>
           </ul>
         </nav>
-        <div id="modal1" class="modal">
+        <div id={modalId} class="modal">
           <div class="modal-content">
             <div className="right modal-close close">X</div>
             <h4>Add Data</h4>
             <div className="row">
-              <form className="col s12">
-                <div className="input-field col s12">
-                  <i class="tiny material-icons prefix">code</i>
-                  <input
-                    placeholder="Url Image"
-                    id="url_image"
-                    type="text"
-                    class="validate"
-                  />
-                  <label for="url_image">Url Image</label>
-                </div>
+              <form onSubmit={onSubmit} className="col s12">
                 <div className="input-field col s12">
                   <i class="tiny material-icons prefix">title</i>
                   <input
-                    placeholder="Title"
-                    id="url_image"
+                    name="title"
+                    placeholder="title"
+                    id="title"
+                    type="text"
+                    className="validate"
+                    //value={title}
+                    onChange={onChange}
+                  />
+                  <label className="active" htmlFor="title">
+                    Title
+                  </label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">contacts</i>
+                  <input
+                    name="author"
+                    placeholder="Author"
+                    id="author"
+                    type="text"
+                    className="validate"
+                    //value={author}
+                    onChange={onChange}
+                  />
+                  <label className="active" htmlFor="author">
+                    Author
+                  </label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">code</i>
+                  <input
+                    name="image_url"
+                    placeholder="Image Url"
+                    id="image_url"
                     type="text"
                     class="validate"
+                    //value={image_url}
+                    onChange={onchange}
                   />
-                  <label for="title">Title</label>
+                  <label className="active" htmlFor="image_url">
+                    Image Url
+                  </label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">today</i>
+                  <input
+                    name="date"
+                    placeholder="Date"
+                    id="date"
+                    type="text"
+                    className="validate"
+                    //value={date}
+                    onChange={onChange}
+                  />
+                  <label className="active" htmlFor="date">
+                    Date
+                  </label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">today</i>
+                  <input
+                    name="year"
+                    placeholder="Year"
+                    id="year"
+                    type="text"
+                    className="validate"
+                    // value={year}
+                    onchange={onchange}
+                  />
+                  <label className="active" htmlFor="year">
+                    Year
+                  </label>
                 </div>
                 <div className="input-field col s12">
                   <i className="tiny material-icons prefix ">description</i>
                   <input
+                    name="description"
                     placeholder="Description"
                     id="description"
                     type="text"
-                    class="validate"
+                    className="validate"
+                    //value={description}
+                    onchange={onchange}
                   />
-                  <label for="description">Description</label>
+                  <label className="active" htmlFor="description">
+                    Description
+                  </label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">code</i>
+                  <input
+                    name="genre"
+                    placeholder="Genre"
+                    id="genre"
+                    type="text"
+                    className="validate"
+                    //value={genre}
+                    onchange={onchange}
+                  />
+                  <label className="active" htmlFor="genre">
+                    Genre
+                  </label>
+                </div>
+                <div class="modal-footer">
+                  <button class="modal-close waves-effect waves-light btn yellow darken-4">
+                    Save
+                  </button>
                 </div>
               </form>
             </div>
-          </div>
-          <div class="modal-footer">
-            <a
-              href="#!"
-              class="modal-close waves-effect waves-light btn yellow darken-4"
-            >
-              Save
-            </a>
           </div>
         </div>
       </div>

@@ -17,19 +17,9 @@ class NavbarDetail extends Component {
   deleteThisGoal() {
     const getAlert = () => (
       <SweetAlert success onConfirm={() => this.hideAlert()}>
-        Data <b>{this.props.title} </b> Berhasil Terhapus
+        <b>{this.props.title} </b> deleted successfully
       </SweetAlert>
     );
-    //      warning
-    //   showCancel
-    //   confirmBtnText="Yes, delete it!"
-    //   confirmBtnBsStyle="danger"
-    //   title="Are you sure?"
-    //   onConfirm={this.deleteFile}
-    //   onCancel={this.onCancel}
-    //   focusCancelBtn
-    // >
-    //   You will not be able to recover this imaginary file!
 
     this.setState({
       alert: getAlert()
@@ -60,7 +50,12 @@ class NavbarDetail extends Component {
                 </li>
                 <li>|</li>
                 <li>
-                  <a onClick={() => this.deleteThisGoal()}>Delete</a>
+                  <a
+                    href={`../?ide=${this.props.alert}`}
+                    onClick={() => this.deleteThisGoal()}
+                  >
+                    Delete
+                  </a>
                   {this.state.alert}
                 </li>
               </ul>
@@ -69,7 +64,7 @@ class NavbarDetail extends Component {
         </div>
         <section
           style={{
-            backgroundImage: `url(${this.props.url_image})`
+            backgroundImage: `url(${this.props.image_url})`
           }}
         ></section>
         <div id="modal-edit" class="modal">
@@ -78,6 +73,26 @@ class NavbarDetail extends Component {
             <h4>Edit Data</h4>
             <div className="row">
               <form className="col s12">
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">title</i>
+                  <input
+                    placeholder="title"
+                    id="title"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="url_image">Title</label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">contacts</i>
+                  <input
+                    placeholder="Author"
+                    id="author"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="author">Author</label>
+                </div>
                 <div className="input-field col s12">
                   <i class="tiny material-icons prefix">code</i>
                   <input
@@ -89,14 +104,24 @@ class NavbarDetail extends Component {
                   <label for="url_image">Url Image</label>
                 </div>
                 <div className="input-field col s12">
-                  <i class="tiny material-icons prefix">title</i>
+                  <i class="tiny material-icons prefix">today</i>
                   <input
-                    placeholder="Title"
-                    id="url_image"
+                    placeholder="Date"
+                    id="date"
                     type="text"
                     class="validate"
                   />
-                  <label for="title">Title</label>
+                  <label for="date">Date</label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">today</i>
+                  <input
+                    placeholder="Year"
+                    id="year"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="year">Year</label>
                 </div>
                 <div className="input-field col s12">
                   <i className="tiny material-icons prefix ">description</i>
@@ -107,6 +132,16 @@ class NavbarDetail extends Component {
                     class="validate"
                   />
                   <label for="description">Description</label>
+                </div>
+                <div className="input-field col s12">
+                  <i class="tiny material-icons prefix">code</i>
+                  <input
+                    placeholder="Genre"
+                    id="genre"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="genre">Genre</label>
                 </div>
               </form>
             </div>

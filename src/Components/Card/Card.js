@@ -12,22 +12,25 @@ class Card extends Component {
       <div className="container">
         <h4>List Book</h4>
         <div className="row">
-          {books.map((book, index) => {
-            return (
-              <Link to={`detail/${index}`}>
-                <div className="col m4 s12">
-                  <div className="card">
-                    <div className="card-images">
-                      <img src={book.image_url} />
-                    </div>
-                    <div className="card-content">
-                      <span className="card-titles">{book.title}</span>
-                      <p>{book.description}</p>
+          {this.props.book.map((book, index) => {
+            let idx = this.props.alert;
+
+            if ("?ide=" + index != idx)
+              return (
+                <Link to={`detail/${index}`}>
+                  <div className="col m4 s12">
+                    <div className="card">
+                      <div className="card-images">
+                        <img src={book.image_url} />
+                      </div>
+                      <div className="card-content">
+                        <span className="card-titles">{book.title}</span>
+                        <p>{book.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            );
+                </Link>
+              );
           })}
         </div>
       </div>
